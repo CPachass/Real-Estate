@@ -1,0 +1,39 @@
+@use "variables" as v;
+
+/* Device sizes */
+
+@mixin phone() {
+    @media (min-width: v.$phone) {
+        @content;
+    }
+}
+
+@mixin tablet() {
+    @media (min-width: v.$tablet) {
+        @content;
+    }
+}
+
+@mixin desktop() {
+    @media (min-width: v.$desktop) {
+        @content;
+    }
+}
+
+@mixin desktop_xl() {
+    @media (min-width: v.$desktop_xl) {
+        @content;
+    }
+}
+
+/* Grid */
+@mixin grid($columns, $gap) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $gap;
+}
+
+/* Buttons */
+@mixin button() {
+    
+}

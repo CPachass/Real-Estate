@@ -1,0 +1,42 @@
+{
+  "name": "03_real_estate",
+  "version": "1.0.0",
+  "description": "Real Estate project with dynamic features and CRUD using PHP.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CPachass/Real-Estate.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "SASS",
+    "Gulp",
+    "JavaScript",
+    "PHP"
+  ],
+  "author": "Víctor Flores Juárez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CPachass/Real-Estate/issues"
+  },
+  "homepage": "https://github.com/CPachass/Real-Estate#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.1",
+    "gulp": "^4.0.2",
+    "gulp-avif": "^1.1.1",
+    "gulp-cache": "^1.1.3",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser-js": "^5.2.2",
+    "gulp-webp": "^4.0.1",
+    "sass": "^1.62.1"
+  }
+}

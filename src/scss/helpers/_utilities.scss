@@ -1,0 +1,24 @@
+@use "variables" as v;
+
+.section {
+    margin-top: calc(v.$separation / 2);
+    margin-bottom: calc(v.$separation / 2);
+}
+.content_centered {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+.no_select {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none;
+}
+.align_right {
+    display: flex;
+    justify-content: flex-end;
+}
+.text_justified { text-align: justify; }
+.text_uppercase { text-transform: uppercase; }
+.text_capitalize { text-transform: capitalize; }
+.w_100 { width: 100%; }
