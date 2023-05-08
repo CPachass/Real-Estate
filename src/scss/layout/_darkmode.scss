@@ -1,0 +1,25 @@
+@use "helpers/variables" as v;
+@use "helpers/mixins" as m;
+
+body.dark_mode {
+    background-color: v.$black;
+    h1, h2, h3, h4, p { color: v.$white; }
+    .ad {
+        background-color: darken(v.$dark_gray, 4);
+        border: 1px solid darken(v.$dark_gray, 10);
+        .ad_content img {
+            filter: invert(100%);
+        }
+    }
+    form {
+        fieldset {
+            border: 1px solid v.$dark_gray;
+        }
+        legend, label, span { color: v.$white; }
+        input, textarea, select {
+            color: v.$white;
+            background-color: darken(v.$dark_gray, 5);
+            border: 1px solid darken(v.$dark_gray, 10);
+        }
+    }
+}
