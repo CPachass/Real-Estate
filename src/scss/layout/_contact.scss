@@ -1,0 +1,41 @@
+@use "helpers/variables" as v;
+@use "helpers/mixins" as m;
+
+.contact {
+    padding-bottom: 4rem;
+    img { height: auto; }
+    button { text-transform: uppercase; }
+}
+fieldset {
+    legend {
+        font-size: 2rem;
+    }
+    .form_field {
+        margin-bottom: 2rem;
+        &:last-of-type { margin-bottom: 0; }
+    }
+    margin-bottom: 2rem;
+}
+.form_field {
+    display: block;
+    label { 
+        display: block;
+        text-transform: uppercase;
+        font-weight: v.$bolder;
+    }
+    input, select, textarea { border: 1px solid v.$gray; }
+    input:not([type="radio"]), textarea, select {
+        width: 100%;
+        border-radius: 1rem;
+        padding: 0.8rem;
+    }
+    textarea { height: 20rem; }
+    span { display: block; }
+    label.inline { 
+        display: inline-block;
+        margin-right: 1rem;
+        &:last-of-type {
+            margin-left: 4rem;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+@use "helpers/variables" as v;
+@use "helpers/mixins" as m;
+
+main.property {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    h2 { margin-top: -1rem; }
+    p {
+        text-align: justify;
+        margin-top: 1rem; 
+        margin-bottom: 1rem;
+    }
+    .property_image { 
+        height: 40rem;
+        object-fit: cover; 
+    }
+    .price {
+        color: v.$green;
+        font-weight: v.$bold;
+        font-size: 4rem;
+    }
+    .icons, .icon { display: flex; }
+    .icons { column-gap: 3rem; }
+    .icon { column-gap: 2rem; }
+    .property_image, .price, .icons, p {
+        margin-bottom: 2rem;
+    }
+}
+@include m.tablet {
+    main.property .property_image { 
+        height: auto; 
+        max-height: 85rem;
+    }
+}

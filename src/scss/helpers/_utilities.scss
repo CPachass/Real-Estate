@@ -18,7 +18,16 @@
     display: flex;
     justify-content: flex-end;
 }
+.align_left {
+    display: flex;
+    justify-content: flex-start;
+}
+.align_center {
+    display: flex;
+    justify-content: center;
+}
 .text_justified { text-align: justify; }
+.text_centered { text-align: center; }
 .text_uppercase { text-transform: uppercase; }
 .text_capitalize { text-transform: capitalize; }
 .w_100 { width: 100%; }

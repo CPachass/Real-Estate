@@ -1,0 +1,11 @@
+@use "helpers/variables" as v;
+@use "helpers/mixins" as m;
+
+.footer {
+    background-color: v.$dark_gray;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    p {
+        color: v.$white;
+    }
+}

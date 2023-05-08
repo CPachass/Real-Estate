@@ -27,7 +27,7 @@ img, picture {
 h1, h2, h3, h4 {
     font-family: v.$main_font;
     margin: calc(v.$separation / 2);
-    font-weight: v.$regular;
+    font-weight: v.$thin;
     text-align: center;
 }
 h1 { font-size: 3.8rem; }
@@ -45,3 +45,12 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 textarea { resize: none; }
+.container {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+button {
+    border: none;
+    &:hover { cursor: pointer; }
+}

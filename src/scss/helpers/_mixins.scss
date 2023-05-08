@@ -34,6 +34,12 @@
 }
 
 /* Buttons */
-@mixin button() {
-    
+@mixin button($background_color, $display) {
+    background-color: $background_color;
+    display: $display;
+    font-size: 1.9rem;
+    font-weight: v.$bold;
+    text-align: center;
+    color: v.$white;
+    padding: 1rem 2rem 1rem 2rem;
 }

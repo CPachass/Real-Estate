@@ -1,0 +1,26 @@
+@use "helpers/variables" as v;
+@use "helpers/mixins" as m;
+
+.about_us {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    img { object-fit: cover }
+}
+
+@include m.desktop {
+    .about_us { 
+        @include m.grid(2, 2rem);
+        align-items: center; 
+    }
+    .about_us div h4 {
+        text-align: left;
+        font-weight: v.$bold;
+        margin: 0;
+        font-size: 2.2rem;
+    }
+    .about_us div p {
+        margin-top: 2rem;
+        font-size: 1.8rem;
+    }
+    .about_us img { max-height: 40rem; }
+}
