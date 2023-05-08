@@ -1,39 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real Estate</title>
-
-    <!--Styles-->
-    <link rel="stylesheet" href="build/css/app.css">
-</head>
-<body>
-    
-    <header class="header no_select">
-        <div class="dark-mode_logo container">
-            <img src="build/img/dark-mode.svg" alt="dark mode image">
-        </div>
-        <div class="container header_content">
-            <div class="nav-bar">
-                <div class="header_logo">
-                    <a href="/">
-                        <img src="build/img/logo.svg" alt="logo image">
-                    </a>
-                </div>
-                <div class="menu_expand">
-                    <img src="build/img/barras.svg" alt="menu button">
-                </div>
-                <nav>
-                    <a href="about-us.html">About us</a>
-                    <a href="advertisements.html">Advertisements</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contact.html">Contact</a>
-                </nav>
-            </div>
-        </div>
-    </header> <!-- .header -->
+<?php
+    include "includes/templates/header.php";
+?>
 
     <main class="property container section">
         <h2>Beautiful House in the Wood.</h2>
@@ -61,19 +28,6 @@
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, eligendi quisquam aliquam et animi aut maiores odio accusantium cumque, aliquid ab a quas magnam inventore ipsum. Ab distinctio modi reiciendis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, reprehenderit in aliquam porro consectetur, sed facilis ea nobis ex quos aperiam rem? Debitis id illum temporibus iure ratione deleniti enim! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quo tempora temporibus dolore commodi sed quaerat dignissimos optio sint fuga eveniet in adipisci libero mollitia ex necessitatibus, ab, ducimus neque.</p>
     </main> <!-- .property -->
 
-    <footer class="footer no_select">
-        <div class="container">
-            <nav>
-                <a href="about-us.html">About us</a>
-                <a href="advertisements.html">Advertisements</a>
-                <a href="blog.html">Blog</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-            <p class="text_centered">All rights reserved, 2023 &copy;</p>
-        </div>
-    </footer> <!-- .footer -->
-    <!--Scripts-->
-    <script src="build/js/modernizr.js"></script>
-    <script src="build/js/app.js"></script>
-</body>
-</html>
+<?php 
+include "includes/templates/footer.php";
+?>

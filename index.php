@@ -1,42 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real Estate</title>
-
-    <!--Styles-->
-    <link rel="stylesheet" href="build/css/app.css">
-</head>
-<body>
-    
-    <header class="header no_select">
-        <div class="dark-mode_logo container">
-            <img src="build/img/dark-mode.svg" alt="dark mode image">
-        </div>
-        <div class="container header_content">
-            <div class="nav-bar">
-                <div class="header_logo">
-                    <a href="/">
-                        <img src="build/img/logo.svg" alt="logo image">
-                    </a>
-                </div>
-                <div class="menu_expand">
-                    <img src="build/img/barras.svg" alt="menu button">
-                </div>
-                <nav>
-                    <a href="about-us.html">About us</a>
-                    <a href="advertisements.html">Advertisements</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contact.html">Contact</a>
-                </nav>
+<?php
+    require "includes/functions.php";
+    include_template("header", true);
+?>
+    <section class="container details">
+        <h2>More about us</h2>
+        <section class="details_icons">
+            <div class="details_icon">
+                <img src="build/img/icono1.svg" alt="security icon">
+                <h3>Security</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam ex ullam voluptas in, soluta aliquam quod ab distinctio harum perspiciatis sequi doloribus amet recusandae velit itaque repellendus aspernatur modi.</p>
             </div>
-        </div>
-    </header> <!-- .header -->
+            <div class="details_icon">
+                <img src="build/img/icono2.svg" alt="money icon">
+                <h3>Price</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam ex ullam voluptas in, soluta aliquam quod ab distinctio harum perspiciatis sequi doloribus amet recusandae velit itaque repellendus aspernatur modi.</p>
+            </div>
+            <div class="details_icon">
+                <img src="build/img/icono3.svg" alt="clock icon">
+                <h3>On time</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam ex ullam voluptas in, soluta aliquam quod ab distinctio harum perspiciatis sequi doloribus amet recusandae velit itaque repellendus aspernatur modi.</p>
+            </div>
+        </section>
+    </section> <!-- .details -->
 
-    <main class="container property-listing section">
-        <h2>Advertisements.</h2>
+    <main class="container property-listing">
+        <h2>Houses and apartments for sale.</h2>
         <div class="ads">
             <div class="ad no_select">
                 <picture>
@@ -201,21 +189,62 @@
                 </div><!-- .ad_content -->
             </div> <!-- .ad -->
         </div> <!-- .ads -->
+        <div class="align_right">
+            <a href="advertisements.html" class="button-green-inline">Ver todas</a>
+        </div>
     </main> <!-- .property-listing -->
 
-    <footer class="footer no_select">
-        <div class="container">
-            <nav>
-                <a href="about-us.html">About us</a>
-                <a href="advertisements.html">Advertisements</a>
-                <a href="blog.html">Blog</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-            <p class="text_centered">All rights reserved, 2023 &copy;</p>
+    <section class="contact-image">
+        <h2>Find the house of your dreams.</h2>
+        <p>Fill out the contact form and an advisor will contact you shortly.</p>
+        <div class="align_center">
+            <a href="contact.html" class="button-yellow-inline">Contact us</a>
         </div>
-    </footer> <!-- .footer -->
-    <!--Scripts-->
-    <script src="build/js/modernizr.js"></script>
-    <script src="build/js/app.js"></script>
-</body>
-</html>
+    </section> <!-- .contact-image -->
+
+    <section class="container lower-section">
+        <div>
+            <h2>Blog</h2>
+            <ul class="blog">
+                <li class="post">
+                    <picture>
+                        <source srcset="build/img/blog1.avif" type="image/avif">
+                        <source srcset="build/img/blog1.webp" type="image/webp">
+                        <img loading="lazy"  width="200" height="300" src="build/img/blog1.jpg" alt="blog ">
+                    </picture>
+                    <a href="post.html" class="post_information">
+                        <h4>Terrace on the roof of your house.</h4>
+                        <p>Written on: <span>20/04/2023</span> by: <span>Admin</span></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam ex ullam voluptas in</p>
+                    </a>
+                </li> <!-- .post -->
+                <li class="post">
+                    <picture>
+                        <source srcset="build/img/blog2.avif" type="image/avif">
+                        <source srcset="build/img/blog2.webp" type="image/webp">
+                        <img loading="lazy"  width="200" height="300" src="build/img/blog2.jpg" alt="blog ">
+                    </picture>
+                    <a href="post.html" class="post_information">
+                        <h4>Guide to Home Decoration.</h4>
+                        <p>Written on: <span>20/04/2023</span> by: <span>Admin</span></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam ex ullam voluptas in</p>
+                    </a>
+                </li> <!-- .post -->
+            </ul> <!-- .blog -->
+        </div>
+        <div>
+            <h2>Testimonial</h2>
+            <div class="testimonial">
+                <blockquote>
+                    The staff behaved in an excellent way, provided great attention, and the house they offered me meets all my expectations.
+                </blockquote>
+                <div class="align_right">
+                    <p>- Víctor Flores Juárez</p>
+                </div>
+            </div> <!-- .testimonial -->
+        </div>
+    </section> <!-- .lower-section -->
+
+<?php 
+include "includes/templates/footer.php";
+?>

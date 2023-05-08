@@ -32,4 +32,7 @@
 .text_capitalize { text-transform: capitalize; }
 .w_100 { width: 100%; }
 
-.hidden { display: none; }
+.hidden { 
+    opacity: 0;
+    display: none; 
+}

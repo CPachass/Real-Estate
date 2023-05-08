@@ -37,22 +37,13 @@
 nav {
     margin-top: 2rem;
     a {
-        color: v.$white;
-        font-size: 2.2rem;
         display: block;
         text-align: center;
         margin-bottom: 1rem;
+        color: v.$white;
+        font-size: 2.2rem;
         &:hover { color: v.$green; }
     }
-}
-.dark-mode_logo {
-    display: flex;
-    justify-content: flex-end;
-    img { 
-        width: 4rem; 
-        filter: invert(100%);
-    }
-    &:hover { cursor: pointer; }
 }
 div.menu_expand img {
     width: 4rem;
@@ -68,7 +59,7 @@ div.menu_expand img {
         justify-content: space-between;
         align-items: flex-end;
     }
-    .nav-bar nav {
+    nav {
         display: flex;
         column-gap: 2rem;
         margin-top: 0;
@@ -78,4 +69,13 @@ div.menu_expand img {
             margin-bottom: 0;
         }
     }
+}
+.dark-mode_logo {
+    display: flex;
+    justify-content: flex-end;
+    img { 
+        width: 4rem; 
+        filter: invert(100%);
+    }
+    &:hover { cursor: pointer; }
 }
