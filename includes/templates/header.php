@@ -1,3 +1,8 @@
+<?php 
+session_start();
+$is_logged = $_SESSION["auth"];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,29 +12,34 @@
     <title>Real Estate</title>
 
     <!--Styles-->
-    <link rel="preload" href="build/css/app.css" as="style">
-    <link rel="stylesheet" href="build/css/app.css">
+    <link rel="preload" href="/build/css/app.css" as="style">
+    <link rel="stylesheet" href="/build/css/app.css">
 </head>
 <body>
     <header class="header no_select <?php echo $homepage? "homepage" : ""; ?>">
         <div class="dark-mode_logo container">
-            <img src="build/img/dark-mode.svg" alt="dark mode image">
+            <img src="/build/img/dark-mode.svg" alt="dark mode image">
         </div>
         <div class="container header_content">
             <div class="nav-bar">
                 <div class="header_logo">
                     <a href="/">
-                        <img src="build/img/logo.svg" alt="logo image">
+                        <img src="/build/img/logo.svg" alt="logo image">
                     </a>
                 </div>
                 <div class="menu_expand hidden">
-                    <img src="build/img/barras.svg" alt="menu button">
+                    <img src="/build/img/barras.svg" alt="menu button">
                 </div>
                 <nav class="hidden">
-                    <a href="about-us.php">About us</a>
-                    <a href="advertisements.php">Advertisements</a>
-                    <a href="blog.php">Blog</a>
-                    <a href="contact.php">Contact</a>
+                    <a href="/about-us.php">About us</a>
+                    <a href="/advertisements.php">Advertisements</a>
+                    <a href="/blog.php">Blog</a>
+                    <a href="/contact.php">Contact</a>
+                    <?php if($is_logged) : ?>
+                        <a href="/logout.php">Logout</a>
+                    <?php else : ?>
+                        <a href="/login.php">Login</a>
+                    <?php endif; ?>
                 </nav>
             </div>
             <?php echo $homepage? "<h1>Sale of House and Exclusive Luxury Apartments.</h1>" : ""; ?>

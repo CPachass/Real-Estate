@@ -36,6 +36,7 @@
 /* Buttons */
 @mixin button($background_color, $display) {
     background-color: $background_color;
+    border: none;
     display: $display;
     font-size: 1.9rem;
     font-weight: v.$bold;

@@ -1,0 +1,19 @@
+@use "helpers/variables" as v;
+@use "helpers/mixins" as m;
+
+.message {
+    width: 100%;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: v.$bold;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: v.$white;
+}
+.error {
+    background-color: v.$red;
+}
+.pass {
+    background-color: v.$green;
+}

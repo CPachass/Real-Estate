@@ -1,8 +1,9 @@
 <?php
-    include "includes/templates/header.php";
+require "includes/functions.php";
+include_template("header");    
 ?>
 
 
-<?php 
-include "includes/templates/footer.php";
+<?php
+include_template("footer");    
 ?>

@@ -1,0 +1,26 @@
+@use "helpers/variables" as v;
+@use "helpers/mixins" as m;
+
+
+.properties_table {
+    width: 100%;
+    thead {
+        background-color: v.$green;
+        th {
+            font-size: 2.2rem;
+            font-weight: v.$regular;
+            padding: 1rem 3rem;
+        }
+    }
+    tbody {
+        td img { margin: 0 auto; }
+        img { 
+            width: 100%; 
+            max-width: 20rem;
+        }
+        td {
+            text-align: center;
+            font-size: 1.6rem;
+        }
+    }
+}
